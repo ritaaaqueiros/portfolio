@@ -1,0 +1,160 @@
+html{
+    scroll-behavior: smooth;  
+}
+
+#loader {
+position: absolute;
+left: 50%;
+top: 50%;
+z-index: 1;
+width: 150px;
+height: 150px;
+margin: -75px 0 0 -75px;
+border: 16px solid #f3f3f3;
+border-radius: 50%;
+border-top: 16px solid rgb(233,127,88);
+width: 120px;
+height: 120px;
+-webkit-animation: spin 2s linear infinite;
+animation: spin 2s linear infinite;
+}
+  
+@-webkit-keyframes spin {
+0% { -webkit-transform: rotate(0deg); }
+100% { -webkit-transform: rotate(360deg); }
+}
+  
+@keyframes spin {
+0% { transform: rotate(0deg); }
+100% { transform: rotate(360deg); }
+}
+  
+.animate-bottom {
+position: relative;
+-webkit-animation-name: animatebottom;
+-webkit-animation-duration: 1s;
+animation-name: animatebottom;
+animation-duration: 1s
+}
+  
+@-webkit-keyframes animatebottom {
+from { bottom:-100px; opacity:0 } 
+to { bottom:0px; opacity:1 }
+}
+  
+@keyframes animatebottom { 
+from{ bottom:-100px; opacity:0 } 
+to{ bottom:0; opacity:1 }
+}
+  
+#myDiv{
+display: none;
+}
+
+.navbar.scrolled{
+background-color:  rgb(233,127,88) !important;
+transition: background-color 200ms linear;
+}
+
+.navbar.scrolled .nav-link{
+color:#555;
+}
+
+.navbar.scrolled2{
+    background-color:  white !important;
+    transition: background-color 200ms linear;
+}
+    
+.navbar.scrolled2 .nav-link{
+color:#555;
+}
+
+.nav-link{
+color: white !important;
+}
+
+.jumbotron{
+background: url("Imagens/header2.jpeg");
+padding-top: 15%;
+padding-bottom: 30%;
+color: white;
+
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.AboutSection{
+margin-top: 200px;
+margin-bottom: 50px;
+}
+
+.background-about{
+background-image: url("https://images.pexels.com/photos/1139541/pexels-photo-1139541.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+background-size: cover;
+background-repeat: no-repeat;
+padding-bottom: 5%;
+padding-top:5%;
+}
+  
+.btn{
+background-color: rgb(233,127,88);
+color: white;
+}
+
+.btn:hover{
+background-color: rgb(233, 115, 72);
+color: white;
+}
+
+.overlay{
+position: absolute;
+top:0;
+bottom:0;
+right: 0;
+left: 0;
+height: 100%;
+width: 100%;
+opacity: 0;
+transition: .5s ease;
+background-color:rgb(233, 115, 72);
+}
+
+.containerProjects:hover .overlay{
+opacity: 0.8;
+cursor: pointer;
+}
+
+.text{
+color:white;
+font-size: 20px;
+text-align: center;
+transform: translateY(400%);
+}
+
+.figure{
+width: 100%;
+}
+
+.img-portfolio{
+height: 200px;
+overflow: hidden;
+}
+
+.ContactMeSection{
+background-color: rgb(233,127,88) !important;
+color: white !important;
+padding-top: 50px;
+padding-bottom: 50px;
+}
+
+.contact-icon{
+background-color: white !important;
+color:rgb(233,127,88);
+box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+line-height: 8.5rem;
+height: 7rem;
+width: 7rem;
+display: block;
+}
+
